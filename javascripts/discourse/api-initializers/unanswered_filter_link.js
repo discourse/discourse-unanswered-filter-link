@@ -10,7 +10,6 @@ export default apiInitializer("0.11.1", (api) => {
       return exclusionList.indexOf(router.currentURL) < 0;
     },
     customHref: function (category, args, router) {
-      console.log(args);
       let routeName =
         args.filterType === "categories"
           ? "discovery.latest"
